@@ -1,0 +1,9 @@
+<form action="/bogs" method="post">
+	<label> Name: </label> <input type="text" name="bog[name]" placeholder="What's your bog's name?"> <br>
+	<label> Description: </label><br> <textarea name="bog[description]" placeholder="How would you describe your bog?"></textarea><br>
+
+	<!-- authenticty tag -->
+	<%= token_tag form_authenticity_token %>
+
+	<button> Report bog/creature! </button>
+</form>
